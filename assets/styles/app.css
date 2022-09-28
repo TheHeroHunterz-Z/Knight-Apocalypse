@@ -1,0 +1,141 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0.5rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 2rem;
+  color: #ff0062;
+  border: 1px solid green;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: green;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: green;
+  transition: all 0.2s ease-out;
+}
+
+button {
+  font: inherit;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #a927f5;
+  border-color: #a927f5;
+}
+
+#controls {
+  margin: 2rem auto;
+  width: 30rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #controls {
+    width:90vw;
+  }
+}
+
+
+#controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#bonus-life {
+  font-weight: bold;
+  color: white;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+
+#playerSprite{
+  width: 400px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #playerSprite {
+    width:200px;
+    height:250px;
+  }
+}
+
+#entities{
+  display: flex;
+  justify-content: center;
+}
+
+
+#playerSpriteContainer{
+  width:30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#monsterSpriteContainer{
+  width:30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#monsterSprite{
+  width: 400px;
+  height: 500px;
+  position: relative;
+  bottom:0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #monsterSprite {
+    width:200px;
+    height:250px;
+  }
+}
